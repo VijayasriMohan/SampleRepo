@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation isOneWay="false" action="http://soap.amazon.com/ItemSearch" name="ItemSearch" bindingOperationName="ItemSearch" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="f930bdac-1752-4eae-88ce-7f1f2e0c81e5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f930bdac-1752-4eae-88ce-7f1f2e0c81e5fileName">ItemSearch</con:setting></con:settings><con:call name="Request 1" outgoingWss="out" id="db8f390a-340b-437d-a659-5e59d4a18859"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.amazon.fr/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsse:BinarySecurityToken EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="X509-34A37D8FA322D3D8E5135842019657513">MIICdzCCAeCgAwIBAgIGALtqqWOiMA0GCSqGSIb3DQEBBQUAMFMxCzAJBgNVBAYTAlVTMRMwEQYDVQQKEwpBbWF6b24uY29tMQwwCgYDVQQLEwNBV1MxITAfBgNVBAMTGEFXUyBMaW1pdGVkLUFzc3VyYW5jZSBDQTAeFw0xMjExMjMyMTE2MjFaFw0xMzExMjMyMTE2MjFaMFIxCzAJBgNVBAYTAlVTMRMwEQYDVQQKEwpBbWF6b24uY29tMRcwFQYDVQQLEw5BV1MtRGV2ZWxvcGVyczEVMBMGA1UEAxMMYWthNHNwbG1kMGRwMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRsDSa/cFd4ROYY0EV7ypuJ+Zdg7WudDFsRYL5lPETBgoMQf90RprXnRyUepVJUz4/gWdfZ1pIIyCVlPFjRtj/LBs1jpT5mtOjTqJ2QVTVw/1e9O6H32bvilI6JnYRagTBc4gI2m5yNwntqdKaPdXUvNYfORISIN2bogTKGtZ5DwIDAQABo1cwVTAOBgNVHQ8BAf8EBAMCBaAwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUAe0C3AKBp1f8cEUYNnrVmY8JYnEwDQYJKoZIhvcNAQEFBQADgYEAQMjKJOARTODgavO9rfKy4rV7Qbwks7TBCEFZsFMqNt/olh2W8z4HB/pfU4DUrwQ/ujiQU+mQdtIhqFo/PitnYbR/BrvYufBOumRxYpKotyShvaKRYmEZ0ocE9cRk0X+/GHWN6SyY3gJ1Qendq2g/obj35x8ShKFfRTjkd3hlbGI=</wsse:BinarySecurityToken>
+         <ds:Signature Id="SIG-10" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+               <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                  <ec:InclusiveNamespaces PrefixList="ns soapenv" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+               </ds:CanonicalizationMethod>
+               <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+               <ds:Reference URI="#TS-9">
+                  <ds:Transforms>
+                     <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                        <ec:InclusiveNamespaces PrefixList="wsse ns soapenv" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                     </ds:Transform>
+                  </ds:Transforms>
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                  <ds:DigestValue>DicmijrWt00zG56hrla5sFRAVHk=</ds:DigestValue>
+               </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>OSSoWcC2zXcCrTDogOMOsZTRzYymoBEGIDYR4UZsr+Z6MRoLqKTONof2BIrzYrRYACfE6/s7fx0U6HmaDc4zjfe70pyIty5qqP8GnRwERnp7p5AogIvSmQ5jHCKMB+8O/5ggxwWga7l98xlK90UQfExYd3EKXrsZs3LkN3fTqS4=</ds:SignatureValue>
+            <ds:KeyInfo Id="KI-34A37D8FA322D3D8E5135842019657514">
+               <wsse:SecurityTokenReference wsu:Id="STR-34A37D8FA322D3D8E5135842019657515">
+                  <wsse:Reference URI="#X509-34A37D8FA322D3D8E5135842019657513" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/>
+               </wsse:SecurityTokenReference>
+            </ds:KeyInfo>
+         </ds:Signature>
+         <wsu:Timestamp wsu:Id="TS-9">
+            <wsu:Created>2013-01-17T10:56:36.552Z</wsu:Created>
+            <wsu:Expires>2013-01-17T11:13:16.552Z</wsu:Expires>
+         </wsu:Timestamp>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns:ItemSearch>
+         <ns:AWSAccessKeyId>${#Project#AWSAccessKeyId}</ns:AWSAccessKeyId>
+         <ns:AssociateTag>SmartBear</ns:AssociateTag>
+         <ns:Request>
+            <ns:ItemPage>1</ns:ItemPage>
+            <ns:Keywords>soapui</ns:Keywords>
+            <ns:SearchIndex>All</ns:SearchIndex>
+         </ns:Request>
+      </ns:ItemSearch>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.amazon.com/ItemSearch"/><con:wsrmConfig version="1.2"/></con:call><con:call name="Request 2" id="849d0fbf-00d2-48b3-812d-61c50ace057d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.amazon.fr/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:ItemSearch><!--Optional:-->
+         <ns:MarketplaceDomain>?</ns:MarketplaceDomain>
+         <!--Optional:-->
+         <ns:AWSAccessKeyId>?</ns:AWSAccessKeyId>
+         <!--Optional:-->
+         <ns:AssociateTag>?</ns:AssociateTag>
+         <!--Optional:-->
+         <ns:XMLEscaping>?</ns:XMLEscaping>
+         <!--Optional:-->
+         <ns:Validate>?</ns:Validate>
+         <!--Optional:-->
+         <ns:Shared>
+            <!--Optional:-->
+            <ns:Actor>?</ns:Actor>
+            <!--Optional:-->
+            <ns:Artist>?</ns:Artist>
+            <!--Optional:-->
+            <ns:Availability>?</ns:Availability>
+            <!--Zero or more repetitions:-->
+            <ns:AudienceRating>?</ns:AudienceRating>
+            <!--Optional:-->
+            <ns:Author>?</ns:Author>
+            <!--Optional:-->
+            <ns:Brand>?</ns:Brand>
+            <!--Optional:-->
+            <ns:BrowseNode>?</ns:BrowseNode>
+            <!--Optional:-->
+            <ns:Composer>?</ns:Composer>
+            <!--Optional:-->
+            <ns:Condition>?</ns:Condition>
+            <!--Optional:-->
+            <ns:Conductor>?</ns:Conductor>
+            <!--Optional:-->
+            <ns:Director>?</ns:Director>
+            <!--Optional:-->
+            <ns:ItemPage>?</ns:ItemPage>
+            <!--Optional:-->
+            <ns:Keywords>?</ns:Keywords>
+            <!--Optional:-->
+            <ns:Manufacturer>?</ns:Manufacturer>
+            <!--Optional:-->
+            <ns:MaximumPrice>?</ns:MaximumPrice>
+            <!--Optional:-->
+            <ns:MerchantId>?</ns:MerchantId>
+            <!--Optional:-->
+            <ns:MinimumPrice>?</ns:MinimumPrice>
+            <!--Optional:-->
+            <ns:MinPercentageOff>?</ns:MinPercentageOff>
+            <!--Optional:-->
+            <ns:MusicLabel>?</ns:MusicLabel>
+            <!--Optional:-->
+            <ns:Orchestra>?</ns:Orchestra>
+            <!--Optional:-->
+            <ns:Power>?</ns:Power>
+            <!--Optional:-->
+            <ns:Publisher>?</ns:Publisher>
+            <!--Optional:-->
+            <ns:RelatedItemPage>?</ns:RelatedItemPage>
+            <!--Zero or more repetitions:-->
+            <ns:RelationshipType>?</ns:RelationshipType>
+            <!--Zero or more repetitions:-->
+            <ns:ResponseGroup>?</ns:ResponseGroup>
+            <!--Optional:-->
+            <ns:SearchIndex>?</ns:SearchIndex>
+            <!--Optional:-->
+            <ns:Sort>?</ns:Sort>
+            <!--Optional:-->
+            <ns:Title>?</ns:Title>
+            <!--Optional:-->
+            <ns:ReleaseDate>?</ns:ReleaseDate>
+            <!--Optional:-->
+            <ns:IncludeReviewsSummary>?</ns:IncludeReviewsSummary>
+            <!--Optional:-->
+            <ns:TruncateReviewsAt>?</ns:TruncateReviewsAt>
+         </ns:Shared>
+         <!--Zero or more repetitions:-->
+         <ns:Request>
+            <!--Optional:-->
+            <ns:Actor>?</ns:Actor>
+            <!--Optional:-->
+            <ns:Artist>?</ns:Artist>
+            <!--Optional:-->
+            <ns:Availability>?</ns:Availability>
+            <!--Zero or more repetitions:-->
+            <ns:AudienceRating>?</ns:AudienceRating>
+            <!--Optional:-->
+            <ns:Author>?</ns:Author>
+            <!--Optional:-->
+            <ns:Brand>?</ns:Brand>
+            <!--Optional:-->
+            <ns:BrowseNode>?</ns:BrowseNode>
+            <!--Optional:-->
+            <ns:Composer>?</ns:Composer>
+            <!--Optional:-->
+            <ns:Condition>?</ns:Condition>
+            <!--Optional:-->
+            <ns:Conductor>?</ns:Conductor>
+            <!--Optional:-->
+            <ns:Director>?</ns:Director>
+            <!--Optional:-->
+            <ns:ItemPage>?</ns:ItemPage>
+            <!--Optional:-->
+            <ns:Keywords>?</ns:Keywords>
+            <!--Optional:-->
+            <ns:Manufacturer>?</ns:Manufacturer>
+            <!--Optional:-->
+            <ns:MaximumPrice>?</ns:MaximumPrice>
+            <!--Optional:-->
+            <ns:MerchantId>?</ns:MerchantId>
+            <!--Optional:-->
+            <ns:MinimumPrice>?</ns:MinimumPrice>
+            <!--Optional:-->
+            <ns:MinPercentageOff>?</ns:MinPercentageOff>
+            <!--Optional:-->
+            <ns:MusicLabel>?</ns:MusicLabel>
+            <!--Optional:-->
+            <ns:Orchestra>?</ns:Orchestra>
+            <!--Optional:-->
+            <ns:Power>?</ns:Power>
+            <!--Optional:-->
+            <ns:Publisher>?</ns:Publisher>
+            <!--Optional:-->
+            <ns:RelatedItemPage>?</ns:RelatedItemPage>
+            <!--Zero or more repetitions:-->
+            <ns:RelationshipType>?</ns:RelationshipType>
+            <!--Zero or more repetitions:-->
+            <ns:ResponseGroup>?</ns:ResponseGroup>
+            <!--Optional:-->
+            <ns:SearchIndex>?</ns:SearchIndex>
+            <!--Optional:-->
+            <ns:Sort>?</ns:Sort>
+            <!--Optional:-->
+            <ns:Title>?</ns:Title>
+            <!--Optional:-->
+            <ns:ReleaseDate>?</ns:ReleaseDate>
+            <!--Optional:-->
+            <ns:IncludeReviewsSummary>?</ns:IncludeReviewsSummary>
+            <!--Optional:-->
+            <ns:TruncateReviewsAt>?</ns:TruncateReviewsAt>
+         </ns:Request>
+      </ns:ItemSearch>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.amazon.com/ItemSearch"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

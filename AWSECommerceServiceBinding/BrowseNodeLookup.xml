@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation isOneWay="false" action="http://soap.amazon.com/BrowseNodeLookup" name="BrowseNodeLookup" bindingOperationName="BrowseNodeLookup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="b6eade68-dd6f-4449-aa35-c6373472f811" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b6eade68-dd6f-4449-aa35-c6373472f811fileName">BrowseNodeLookup</con:setting></con:settings><con:call name="Request 1" id="10cd9f86-77e3-48da-ae43-57f5185545ad"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.amazon.fr/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:BrowseNodeLookup/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.amazon.com/BrowseNodeLookup"/></con:call></con:operation>
